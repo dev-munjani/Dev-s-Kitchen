@@ -1,0 +1,26 @@
+{
+  "name": "Dev's Kitchen",
+  "short_name": "Dev's Kitchen",
+  "description": "Quick Bites, Big Flavours — Street Food in Ahmedabad",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#FC8019",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "logo_opt.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo_opt.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "restaurants"],
+  "lang": "en-IN"
+}
