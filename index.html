@@ -70,6 +70,14 @@
   <!-- Favicon & Assets -->
   <link rel="icon" href="logo.png" type="image/png">
   <link rel="apple-touch-icon" href="logo.png">
+
+  <!-- Preconnect to Google Fonts (non-blocking) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font load: display=swap prevents invisible text flash -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"></noscript>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -140,7 +148,7 @@
   <!-- HEADER -->
   <header class="hdr" id="hdr">
     <div class="hdr-left">
-      <img src="logo.png" alt="Dev's Kitchen" class="hdr-logo" onclick="scrollTo(0,0)">
+      <img src="logo.png" alt="Dev's Kitchen" class="hdr-logo" onclick="scrollTo(0,0)" fetchpriority="high" decoding="async">
     </div>
     <div class="hdr-center">
       <div class="hdr-name">Dev's Kitchen</div>
@@ -202,7 +210,7 @@
           </svg></span><span data-en="Contact" data-gu="સંપર્ક">Contact</span></a>
     </div>
     <div class="nav-ft">
-      <img src="logo.png" alt="Logo" class="nav-ft-logo">
+      <img src="logo.png" alt="Logo" class="nav-ft-logo" loading="lazy" decoding="async">
       <div class="nav-ft-text">
         <h3>Dev's Kitchen</h3>
         <p>Quick Bites | Big Flavours</p>
@@ -305,7 +313,7 @@
     <div class="about-grid">
       <div class="rv-l">
         <div class="about-img-wrap">
-          <img src="image.png" alt="About Dev's Kitchen" class="about-img">
+          <img src="image.png" alt="About Dev's Kitchen" class="about-img" loading="lazy" decoding="async">
           <div class="about-img-card"><strong>500+</strong><span data-en="Daily Orders" data-gu="દૈનિક ઓર્ડર">Daily
               Orders</span></div>
         </div>
@@ -395,7 +403,7 @@
     <div class="ft-inner">
       <div class="ft-grid rv">
         <div class="ft-brand">
-          <div class="ft-logo-row"><img src="logo.png" alt="Logo">
+          <div class="ft-logo-row"><img src="logo.png" alt="Logo" loading="lazy" decoding="async">
             <div>
               <h3>Dev's Kitchen</h3>
               <p>Quick Bites | Big Flavours</p>
@@ -568,7 +576,7 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 
   <!-- ============================================================
        CONTENT PROTECTION — Zoom · Selection · Right-click · Shortcuts · Drag
