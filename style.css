@@ -86,8 +86,10 @@ body {
   background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: transparent; /* remove grey flash on tap */
-  touch-action: pan-y;                      /* allow vertical scrolling only */
+  -webkit-tap-highlight-color: transparent;
+  /* remove grey flash on tap */
+  touch-action: pan-y;
+  /* allow vertical scrolling only */
   overflow-x: hidden;
   transition: background-color .38s ease, color .38s ease;
   /* Disable text selection site-wide */
@@ -842,7 +844,17 @@ canvas {
 .ltr {
   display: inline-block;
   opacity: 0;
-  animation: letterPop .55s cubic-bezier(.22, 1, .36, 1) both;
+  animation: letterPop .55s cubic-bezier(.22, 1, .36, 1) both, textSway 4s ease-in-out infinite alternate;
+}
+
+@keyframes textSway {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(-3px) rotate(0.8deg);
+  }
 }
 
 /* ===== STEAM PUFF (DOM-injected bubble style) ===== */
@@ -1289,7 +1301,18 @@ canvas {
 
 .hero-content {
   position: relative;
-  z-index: 3
+  z-index: 3;
+  animation: breathFloat 7s ease-in-out infinite alternate;
+}
+
+@keyframes breathFloat {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-8px);
+  }
 }
 
 .hero-pill {
@@ -1326,7 +1349,8 @@ canvas {
   line-height: 1.06;
   letter-spacing: -2px;
   margin-bottom: 14px;
-  animation: fadeUp .7s ease .1s both
+  animation: fadeUp .7s ease .1s both;
+  position: relative;
 }
 
 .hero-h1 em {
@@ -1336,17 +1360,48 @@ canvas {
 .hero-h1 .line2 {
   display: block;
   font-style: italic;
-  opacity: .7
+  opacity: 0.95;
+  color: var(--accent);
+  text-shadow: 0 4px 18px rgba(252, 128, 25, 0.25);
+  /* minimalistic glow */
 }
 
 .hero-sub {
   font-size: clamp(.82rem, 1.8vw, .95rem);
   color: var(--text2);
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 36px;
-  animation: fadeUp .7s ease .2s both
+  display: inline-block;
+  position: relative;
+  animation: fadeUp .7s ease .2s both;
+}
+
+.hero-sub::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+  opacity: 0;
+  animation: expandLine 1s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
+}
+
+@keyframes expandLine {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 50px;
+    opacity: 0.7;
+  }
 }
 
 .hero-btns {
@@ -4367,7 +4422,8 @@ footer {
 .word-big-flavours .ltr:nth-child(9) {
   position: relative;
   display: inline-block;
-  color: var(--accent);
+  color: #ff0d0dbd;
+
   text-shadow: 0 4px 12px rgba(252, 128, 25, 0.3);
 }
 
