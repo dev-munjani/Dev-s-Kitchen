@@ -1907,14 +1907,31 @@ canvas {
   cursor: pointer
 }
 
-.m-img img {
+.m-img-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.m-img-track::-webkit-scrollbar {
+  display: none;
+}
+
+.m-img-track img {
+  flex: 0 0 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  scroll-snap-align: start;
   transition: transform .6s cubic-bezier(.22, 1, .36, 1) !important
 }
 
-.m-card:hover .m-img img {
+.m-card:hover .m-img-track img {
   transform: scale(1.07) !important
 }
 
