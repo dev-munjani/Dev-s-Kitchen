@@ -193,7 +193,9 @@ function renderMenu(q = "") {
         : (isGu() ? 'ઉમેરો' : 'Add');
       h += `<div class="m-card rv ${dCls}">
         <div class="m-img" onclick="openProd(${item.id})">
-          <img src="${item.imgs[0]}" alt="${item.name}" loading="lazy">
+          <div class="m-img-track">
+            ${item.imgs.map(img => `<img src="${img}" alt="${item.name}" loading="lazy">`).join('')}
+          </div>
           <div class="m-img-overlay"></div>
           ${item.badge ? `<span class="m-img-badge">${item.badge}</span>` : ''}
           <span class="m-img-count">
@@ -658,3 +660,20 @@ function animatHeroTitle() {
     ).join('');
   });
 }
+
+// ============================================================
+// AUTO SWIPE IMAGES
+// ============================================================
+setInterval(() => {
+  document.querySelectorAll('.m-img-track').forEach((track, idx) => {
+    if (track.children.length > 1 && track.offsetParent !== null) {
+      setTimeout(() => {
+        let currentIdx = Math.round(track.scrollLeft / track.clientWidth);
+        let nextIdx = currentIdx + 1;
+        if (nextIdx >= track.children.length) nextIdx = 0;
+        track.scrollTo({ left: nextIdx * track.clientWidth, behavior: 'smooth' });
+      }, (idx % 3) * 600); // stagger animation
+    }
+  });
+}, 4000); // 4 seconds
+
