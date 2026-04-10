@@ -143,19 +143,7 @@ body {
 }
 
 /* Bubble pop */
-@keyframes bubblePop {
 
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: .35;
-  }
-
-  50% {
-    transform: scale(1.5);
-    opacity: .9;
-  }
-}
 
 /* Brand name reveal */
 @keyframes loaderNameIn {
