@@ -91,59 +91,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Font load: display=swap prevents invisible text flash -->
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Fredoka:wght@300;400;500;600;700&family=Lilita+One&display=swap"
     media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap">
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Fredoka:wght@300;400;500;600;700&family=Lilita+One&display=swap">
   </noscript>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- LOADER -->
-  <div class="loader-scrim" id="globalLoader">
 
-    <!-- SVG cooking pot drawing -->
-    <div class="loader-drawing">
-      <svg class="loader-svg" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- steam wisps -->
-        <path class="ld-steam ld-s1" d="M72 60 C68 50,76 42,72 32" stroke-width="2.5" stroke-linecap="round" />
-        <path class="ld-steam ld-s2" d="M100 55 C96 43,104 33,100 21" stroke-width="2.5" stroke-linecap="round" />
-        <path class="ld-steam ld-s3" d="M128 60 C124 50,132 42,128 32" stroke-width="2.5" stroke-linecap="round" />
-        <!-- lid -->
-        <path class="ld-pot" d="M55 80 Q100 68 145 80" stroke-width="3" stroke-linecap="round" />
-        <!-- lid knob -->
-        <circle class="ld-pot" cx="100" cy="76" r="5" stroke-width="2.5" />
-        <!-- pot body -->
-        <path class="ld-pot" d="M58 80 L50 130 Q50 140 62 140 L138 140 Q150 140 150 130 L142 80 Z" stroke-width="2.5"
-          stroke-linejoin="round" />
-        <!-- left handle -->
-        <path class="ld-pot" d="M60 95 Q38 95 38 110 Q38 125 60 125" stroke-width="2.5" stroke-linecap="round" />
-        <!-- right handle -->
-        <path class="ld-pot" d="M140 95 Q162 95 162 110 Q162 125 140 125" stroke-width="2.5" stroke-linecap="round" />
-        <!-- surface shine line inside pot -->
-        <path class="ld-shine" d="M74 100 Q100 93 126 100" stroke-width="1.5" stroke-linecap="round" />
-        <!-- boiling bubbles inside pot -->
-        <circle class="ld-bubble ld-b1" cx="82" cy="118" r="4" stroke-width="1.8" />
-        <circle class="ld-bubble ld-b2" cx="100" cy="112" r="3" stroke-width="1.8" />
-        <circle class="ld-bubble ld-b3" cx="118" cy="120" r="3.5" stroke-width="1.8" />
-      </svg>
-    </div>
-
-    <!-- brand text -->
-    <div class="loader-brand">
-      <div class="loader-name">Dev's <span>Kitchen</span></div>
-      <div class="loader-tagline">Quick Bites &nbsp;·&nbsp; Big Flavours</div>
-    </div>
-
-    <!-- thin animated progress line -->
-    <div class="loader-line">
-      <div class="loader-line-fill"></div>
-    </div>
-
-  </div>
   <!-- FULL-BODY FLOATING FOOD ITEMS -->
   <div class="body-floaters" aria-hidden="true">
     <div class="bf bf-1">🍅</div>
@@ -268,12 +227,12 @@
           </svg>
           <span data-en="Explore Menu" data-gu="મેનુ જુઓ">Explore Menu</span>
         </a>
-        <a href="https://wa.me/919662071110" target="_blank" class="btn-ghost">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        <a href="https://www.zomato.com/" target="_blank" class="btn-ghost"
+          style="border-color: rgba(226,55,68,0.3); color: #e23744;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
           </svg>
-          <span data-en="WhatsApp Order" data-gu="WhatsApp ઓર્ડર">WhatsApp Order</span>
+          <span data-en="Order on Zomato" data-gu="Zomato પર ઓર્ડર">Order on Zomato</span>
         </a>
       </div>
       <div class="hero-stats">
@@ -342,15 +301,8 @@
       </div>
       <div class="rv-r">
         <div class="about-text">
-          <p data-en="Dev's Kitchen started as a small food cart with one big dream — to serve affordable, delicious, and soul-satisfying food to everyone. What began with a simple Maggi bowl has now grown into a beloved street food destination."
-            data-gu="Dev's Kitchen એક નાना ફૂડ કાર્ટ તરીકે શરૂ થयું — દरेकने સ્वादिष्ट ખोराक पीरसवानो सपनो लई.">Dev's
-            Kitchen started as a small food cart with one big dream — to serve affordable, delicious, and
-            soul-satisfying food to everyone. What began with a simple Maggi bowl has now grown into a beloved street
-            food destination.</p>
-          <p data-en="We believe great food doesn't need a fancy restaurant. Every dish is prepared fresh, with love and the finest ingredients — from our signature Maggi to creamy pastas and healthy bowls."
-            data-gu="અમે માનીએ છીએ કે મહાન ખોરાકને ફેન્સી રેસ્ટોરન્ટની જરૂર નથી. દરેક વાનગી તાજી અને પ્રેમથી તૈયાર કરવામાં આવે છે.">
-            We believe great food doesn't need a fancy restaurant. Every dish is prepared fresh, with love and the
-            finest ingredients — from our signature Maggi to creamy pastas and healthy bowls.</p>
+          <p data-en="Meet Dev Munjani, the creator of Dev's Kitchen. What began as a small street project with a single pan and a love for Maggi has grown into one of Ahmedabad's favorite food hotspots. Dev believes the best food doesn't need a five-star kitchen—just pure, fresh ingredients and a lot of heart."
+            data-gu="Dev's Kitchen ના સર્જક દેવ મુંજાનીને મળો. એક નાનકડા પેન અને મેગીના પ્રેમથી શરૂ થયેલો આ પ્રોજેક્ટ આજે અમદાવાદનું ફેવરિટ ફૂડ ડેસ્ટિનેશન છે. દેવનું માનવું છે કે શ્રેષ્ઠ સ્વાદ માટે ૫-સ્ટાર હોટલની નહીં, પણ તાજા મસાલા અને પ્રેમની જરૂર છે.">Meet Dev Munjani, the creator of Dev's Kitchen. What began as a small street project with a single pan and a love for Maggi has grown into one of Ahmedabad's favorite food hotspots. Dev believes the best food doesn't need a five-star kitchen—just pure, fresh ingredients and a lot of heart.</p>
           <div class="stat-row">
             <div class="stat-card rv d1"><strong>500+</strong><span data-en="Daily Orders" data-gu="દૈનિક ઓર્ડર">Daily
                 Orders</span></div>
@@ -377,9 +329,8 @@
     <div class="fb-grid" id="fbGrid"></div>
     <div style="text-align:center;margin-top:32px">
       <a href="https://g.page/r/review" target="_blank" class="review-btn">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path
-            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z" />
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
         </svg>
         Write a Google Review
       </a>
@@ -437,25 +388,23 @@
             a time. Your favourite street food
             destination.</p>
           <div class="ft-socials">
-            <a href="#" class="ft-soc" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2">
+            <a href="https://www.instagram.com/devs__kitchen_/" target="_blank" class="ft-soc" title="Instagram"><svg
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
               </svg></a>
-            <a href="#" class="ft-soc" title="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            <a href="https://www.zomato.com/" target="_blank" class="ft-soc" title="Zomato"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
               </svg></a>
             <a href="#" class="ft-soc" title="Twitter/X"><svg viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
               </svg></a>
             <a href="https://g.page/r/review" target="_blank" class="ft-soc" title="Google Review"><svg
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10" />
-                <path
-                  d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32" />
+                viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
               </svg></a>
           </div>
         </div>
@@ -464,13 +413,13 @@
           <a href="tel:+919662071110"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path
                 d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.61 3.5 2 2 0 013.6 1.32h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9a16 16 0 006.09 6.09l1.75-1.75a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
-            </svg>+91 9662071110</a>
-          <a href="mailto:devskitchen@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            </svg>+91 96620 71110</a>
+          <a href="mailto:devmunjani076@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
               <polyline points="22,6 12,13 2,6" />
             </svg>devmunjani076@gmail.com</a>
-          <a href="https://maps.app.goo.gl/RsCQSCSKfNBXYht27" target="_blank"><svg viewBox="0 0 24 24" fill="none"
+          <a href="https://maps.app.goo.gl/bZ43Sd1pFGFEiVPo6" target="_blank"><svg viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2">
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
               <circle cx="12" cy="10" r="3" />
@@ -521,6 +470,13 @@
     </div>
   </footer>
 
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" class="back-to-top" title="Go to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
   <!-- CART -->
   <div class="cart-scrim" id="cartScrim"></div>
   <div class="cart-pnl" id="cartPnl">
@@ -562,7 +518,7 @@
         <div class="fg"><label>Phone</label><input id="p-p" type="tel" placeholder="+91"></div>
         <div class="fg"><label>Special Instructions</label><textarea id="p-d"
             placeholder="Any notes or customizations..."></textarea></div>
-        <a href="https://maps.app.goo.gl/RsCQSCSKfNBXYht27" target="_blank" class="map-lnk"><svg width="14" height="14"
+        <a href="https://maps.app.goo.gl/bZ43Sd1pFGFEiVPo6" target="_blank" class="map-lnk"><svg width="14" height="14"
             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
             <circle cx="12" cy="10" r="3" />

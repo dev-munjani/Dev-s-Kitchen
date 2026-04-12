@@ -82,7 +82,7 @@ html.theme-transitioning * {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
@@ -288,7 +288,7 @@ body {
 }
 
 .loader-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: 2rem;
   font-weight: 900;
   color: var(--text);
@@ -302,7 +302,7 @@ body {
 }
 
 .loader-tagline {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Caveat', cursive;
   font-size: .6rem;
   font-weight: 600;
   letter-spacing: .32em;
@@ -356,7 +356,7 @@ a {
 }
 
 button {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   cursor: pointer;
   border: none;
   background: none;
@@ -863,6 +863,14 @@ canvas {
   background: rgba(255, 255, 255, 0.45);
 }
 
+.steam-bubble.hero-smoke {
+  background: rgba(239, 68, 68, 0.82);
+}
+
+[data-theme="dark"] .steam-bubble.hero-smoke {
+  background: rgba(255, 255, 255, 0.45);
+}
+
 
 /* ===== TOAST ===== */
 #toasts {
@@ -956,7 +964,7 @@ canvas {
 }
 
 .hdr-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: 1.1rem;
   font-weight: 800;
   letter-spacing: .3px;
@@ -1156,7 +1164,7 @@ canvas {
 }
 
 .nav-hd span {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-weight: 800;
   font-size: .95rem
 }
@@ -1239,7 +1247,7 @@ canvas {
 }
 
 .nav-ft h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: .9rem;
   font-weight: 800
 }
@@ -1331,7 +1339,7 @@ canvas {
 }
 
 .hero-h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: clamp(2.8rem, 7.5vw, 5.8rem);
   font-weight: 900;
   line-height: 1.06;
@@ -1455,7 +1463,7 @@ canvas {
 }
 
 .h-stat strong {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Caveat', cursive;
   font-size: 1.9rem;
   font-weight: 800;
   display: block;
@@ -1725,7 +1733,7 @@ canvas {
   background: var(--card);
   font-size: .88rem;
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   outline: none;
   box-shadow: var(--shadow-xs);
   transition: border-color .25s !important, box-shadow .25s !important
@@ -1800,7 +1808,7 @@ canvas {
 }
 
 .cat-hd h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: 1.55rem;
   font-weight: 900
 }
@@ -2005,7 +2013,7 @@ canvas {
 }
 
 .m-price {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Caveat', cursive;
   font-size: .98rem;
   font-weight: 800;
   white-space: nowrap
@@ -2077,7 +2085,7 @@ canvas {
 }
 
 .qty-n {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: .9rem;
   min-width: 22px;
@@ -2301,7 +2309,7 @@ canvas {
 }
 
 .prod-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 8px;
@@ -2309,7 +2317,7 @@ canvas {
 }
 
 .prod-price {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Caveat', cursive;
   font-size: 1.6rem;
   font-weight: 800;
   margin-bottom: 6px
@@ -2373,7 +2381,7 @@ canvas {
 }
 
 .prod-qty-n {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Caveat', cursive;
   font-size: 1.1rem;
   font-weight: 700;
   min-width: 28px;
@@ -2437,7 +2445,7 @@ canvas {
 }
 
 .sec-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 900;
   line-height: 1.15;
@@ -2517,7 +2525,7 @@ canvas {
 }
 
 .about-img-card strong {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Caveat', cursive;
   font-size: 1.6rem;
   font-weight: 800;
   display: block
@@ -2593,7 +2601,7 @@ canvas {
 }
 
 .stat-card strong {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Caveat', cursive;
   font-size: 2rem;
   font-weight: 800;
   display: block
@@ -2639,7 +2647,7 @@ canvas {
 }
 
 .f-body h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: 1.3rem;
   font-weight: 800;
   margin-bottom: 4px
@@ -2719,7 +2727,7 @@ canvas {
   position: absolute;
   top: -10px;
   right: 18px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: 7rem;
   line-height: 1;
   color: var(--bg3);
@@ -2795,7 +2803,7 @@ canvas {
 }
 
 .bulk-box h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: 1.7rem;
   font-weight: 800;
   margin-bottom: 14px
@@ -2879,7 +2887,7 @@ canvas {
 }
 
 .cart-hd h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: 1.1rem;
   font-weight: 800;
   display: flex;
@@ -2933,7 +2941,7 @@ canvas {
 }
 
 .ci .ci-p {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Caveat', cursive;
   font-size: .86rem;
   font-weight: 700;
   margin-top: 4px
@@ -2981,7 +2989,7 @@ canvas {
 }
 
 .c-qty-n {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: .82rem;
   min-width: 16px;
@@ -3029,7 +3037,7 @@ canvas {
 }
 
 .c-sug-info p {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Caveat', cursive;
   font-size: .74rem;
   font-weight: 700
 }
@@ -3073,7 +3081,7 @@ canvas {
   font-size: 1.05rem;
   font-weight: 800;
   margin-bottom: 14px;
-  font-family: 'Space Grotesk', sans-serif
+  font-family: 'Caveat', cursive
 }
 
 .cart-checkout {
@@ -3141,7 +3149,7 @@ canvas {
 }
 
 .modal h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: 1.2rem;
   font-weight: 800;
   margin-bottom: 22px;
@@ -3223,7 +3231,7 @@ canvas {
   background: var(--bg2);
   font-size: .86rem;
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   outline: none;
   transition: border-color .25s !important
 }
@@ -3299,7 +3307,7 @@ canvas {
 
 .conf-item span:last-child {
   font-weight: 700;
-  font-family: 'Space Grotesk', sans-serif
+  font-family: 'Caveat', cursive
 }
 
 .conf-total {
@@ -3310,7 +3318,7 @@ canvas {
   padding: 14px 0;
   border-top: 2px solid var(--accent);
   margin-top: 4px;
-  font-family: 'Space Grotesk', sans-serif
+  font-family: 'Caveat', cursive
 }
 
 .conf-info {
@@ -3379,7 +3387,7 @@ footer {
 }
 
 .ft-brand .ft-logo-row div h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lilita One', cursive;
   font-size: 1rem;
   font-weight: 800
 }
@@ -3882,12 +3890,23 @@ footer {
 
   /* Feedback */
   .fb-grid {
-    grid-template-columns: 1fr;
-    gap: 14px
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    gap: 16px;
+    padding-bottom: 4px;
+  }
+  .fb-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .fb-card {
-    padding: 22px 20px
+    min-width: 100%;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    padding: 24px 20px;
   }
 
   /* Bulk */
@@ -4459,5 +4478,61 @@ footer {
   100% {
     transform: translate(-50%, -0.9em) scaleX(1.3);
     opacity: 0;
+  }
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-text);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 500;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 4px 12px rgba(252, 128, 25, 0.3);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(252, 128, 25, 0.4);
+}
+
+.back-to-top:active {
+  transform: translateY(0) scale(0.95);
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 600px) {
+  .back-to-top {
+    bottom: 16px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+  }
+  .back-to-top svg {
+    width: 18px;
+    height: 18px;
   }
 }

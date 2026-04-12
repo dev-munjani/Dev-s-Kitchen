@@ -495,7 +495,7 @@ $("procBtn").addEventListener("click", () => {
   if (oType === "delivery") info += `<br><strong>Address:</strong> ${addr}`;
   if (oType === "table") info += `<br><strong>Table:</strong> ${tbl}`;
   if (ex) info += `<br><strong>Notes:</strong> ${ex}`;
-  const waUrl = `https://wa.me/919023668571?text=${encodeURIComponent(msg)}`;
+  const waUrl = `https://wa.me/919662071110?text=${encodeURIComponent(msg)}`;
   $("confContent").innerHTML = `${ih}
     <div class="conf-total"><span>${isGu() ? "Total" : "Total"}</span><span>₹${total}</span></div>
     <div class="conf-info">${info}</div>
@@ -558,7 +558,7 @@ function animateHeroTitle() {
 // ============================================================
 // STEAM PARTICLES (bubble-based)
 // ============================================================
-function spawnSteam(cardEl) {
+function spawnSteam(cardEl, customClass = null) {
   const rect = cardEl.getBoundingClientRect();
   const baseX = rect.left + rect.width * 0.5;
   const baseY = rect.top;
@@ -566,6 +566,7 @@ function spawnSteam(cardEl) {
   function createBubble() {
     const bubble = document.createElement('div');
     bubble.classList.add('steam-bubble');
+    if (customClass) bubble.classList.add(customClass);
 
     // random horizontal offset within card width
     const offsetX = (Math.random() * rect.width * 0.6) - (rect.width * 0.3);
@@ -612,37 +613,15 @@ document.addEventListener('mouseover', e => {
   }
 });
 
+setInterval(() => {
+  const h1 = document.querySelector('.hero-h1');
+  if (h1) spawnSteam(h1, 'hero-smoke');
+}, 10000);
+
 // ============================================================
-// INIT & LOADER
+// INIT & LOADER (Removed for instant loading)
 // ============================================================
-(function initLoader() {
-  // Lock scroll while loader is visible
-  document.body.style.overflow = 'hidden';
-
-  const startTime = Date.now();
-  const MIN_SHOW = 2200; // ms — keep loader long enough to enjoy it
-
-  function dismissLoader() {
-    const elapsed = Date.now() - startTime;
-    const delay = Math.max(0, MIN_SHOW - elapsed);
-    setTimeout(() => {
-      const gl = document.getElementById('globalLoader');
-      if (gl) {
-        gl.classList.add('fade-out');
-        setTimeout(() => {
-          gl.remove();
-          document.body.style.overflow = ''; // unlock scroll
-        }, 620);
-      }
-    }, delay);
-  }
-
-  if (document.readyState === 'complete') {
-    dismissLoader();
-  } else {
-    window.addEventListener('load', dismissLoader);
-  }
-})();
+// (function initLoader() { ... })();
 
 buildMarquee();
 renderCats();
@@ -688,3 +667,33 @@ setInterval(() => {
   });
 }, 500);
 
+// ============================================================
+// BACK TO TOP BUTTON
+// ============================================================
+const bttBtn = document.getElementById("backToTop");
+if (bttBtn) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      bttBtn.classList.add("show");
+    } else {
+      bttBtn.classList.remove("show");
+    }
+  }, { passive: true });
+
+  bttBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+// ============================================================
+// AUTO SWIPE FEEDBACK (MOBILE)
+// ============================================================
+setInterval(() => {
+  const fb = document.getElementById("fbGrid");
+  if (fb && window.innerWidth <= 600 && fb.children.length > 1) {
+    let currentIdx = Math.round(fb.scrollLeft / fb.clientWidth);
+    let nextIdx = currentIdx + 1;
+    if (nextIdx >= fb.children.length) nextIdx = 0;
+    fb.scrollTo({ left: nextIdx * fb.clientWidth, behavior: 'smooth' });
+  }
+}, 4000);
