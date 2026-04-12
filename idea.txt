@@ -1,0 +1,229 @@
+
+
+I want to create a website for my food cart, the food cart name is - Dev's Kitchen,
+
+The kart tag line is - Quick Bites | Big Flavors, 
+
+
+
+Note for website - I do not need single emoji for my website, 	I need proper fonts that shoots on food ordering type website, Use Bold and other variations where needed,
+
+In my website i need 1:1 images for each and every order, Add every menu item should be proper spacing, margin, padding and responsive
+
+ 
+Here is the Menu with category vise of my kitchen and i have attached one temporary image for every food item use this attached image called - image.png
+
+
+
+
+Here is the menu of Dev’s Kitchen - 
+
+
+ Here’s your menu rewritten cleanly with **food name, description, price, and a random rating (⭐ out of 5)**:
+
+---
+
+# 🍜 MAGGI SPECIALS
+
+*Classic, spicy & fully customizable comfort bowls*
+
+### Classic Maggi
+
+Simple and nostalgic Maggi, served in plain or masala style.
+**Price:** ₹60
+**Rating:** ⭐⭐⭐⭐☆ (4.2/5)
+
+---
+
+### Veggie Maggi
+
+Loaded with fresh vegetables for a healthy and tasty twist.
+**Price:** ₹80
+**Rating:** ⭐⭐⭐⭐☆ (4.4/5)
+
+---
+
+### Schezwan Maggi 🌶️
+
+Spicy Indo-Chinese style Maggi with bold Schezwan flavors.
+**Price:** ₹80
+**Rating:** ⭐⭐⭐⭐⭐ (4.6/5)
+
+---
+
+### Double Cheese Maggi 🧀
+
+Extra creamy Maggi topped with rich, melted cheese.
+**Price:** ₹100
+**Rating:** ⭐⭐⭐⭐⭐ (4.7/5)
+
+---
+
+### Paneer Veg Maggi 🍲
+
+Soft paneer cubes mixed with fresh vegetables for a filling meal.
+**Price:** ₹120
+**Rating:** ⭐⭐⭐⭐☆ (4.5/5)
+
+---
+
+### Dev’s Special Maggi ⭐
+
+Signature house-style Maggi with a unique blend of flavors.
+**Price:** ₹120
+**Rating:** ⭐⭐⭐⭐⭐ (4.8/5)
+
+---
+
+# 🍝 PASTA CORNER
+
+*Rich, creamy & flavorful delights*
+
+### Masala Penne Pasta 🍜
+
+Desi-style penne pasta cooked with Indian spices.
+**Price:** ₹70
+**Rating:** ⭐⭐⭐⭐☆ (4.3/5)
+
+---
+
+### White Sauce Penne Pasta 🥛
+
+Creamy white sauce pasta with a smooth and rich texture.
+**Price:** ₹120
+**Rating:** ⭐⭐⭐⭐⭐ (4.6/5)
+
+---
+
+### Red Sauce Penne Pasta 🍅
+
+Classic tomato-based pasta with tangy and herby flavors.
+**Price:** ₹120
+**Rating:** ⭐⭐⭐⭐☆ (4.4/5)
+
+---
+
+### Pink Sauce Penne Pasta 🌸
+
+Perfect blend of white and red sauce for a balanced creamy taste.
+**Price:** ₹120
+**Rating:** ⭐⭐⭐⭐⭐ (4.7/5)
+
+---
+
+### Indian Mom-Style Pasta 🏠
+
+Homestyle comfort pasta with a desi touch and nostalgic flavor.
+**Price:** ₹100
+**Rating:** ⭐⭐⭐⭐☆ (4.5/5)
+
+---
+
+### Spaghetti 🍝
+
+Authentic spaghetti served in Aglio e Olio or Red Sauce.
+**Price:** ₹180
+**Rating:** ⭐⭐⭐⭐⭐ (4.6/5)
+
+---
+
+# 🥗 HEALTHY BOWLS
+
+*Fresh, light & nutritious*
+
+### Cucumber Salad Bowl 🥒
+
+Refreshing cucumber salad with light seasoning.
+**Price:** ₹100
+**Rating:** ⭐⭐⭐⭐☆ (4.2/5)
+
+---
+
+### Sautéed Vegetable Bowl 🥦
+
+Healthy mix of sautéed vegetables with mild spices.
+**Price:** ₹120
+**Rating:** ⭐⭐⭐⭐☆ (4.3/5)
+
+---
+
+### Masala Paneer Bowl 🧀
+
+Flavorful paneer cooked with spices for a protein-rich meal.
+**Price:** ₹150
+**Rating:** ⭐⭐⭐⭐⭐ (4.6/5)
+
+---
+
+# 🌟 DEV’S KITCHEN SPECIALS
+
+*Unique street-style bites you can’t miss*
+
+### Cheese Pull-Out Special 🧀
+
+Melty, stretchy cheese-loaded dish for ultimate indulgence.
+**Price:** ₹180
+**Rating:** ⭐⭐⭐⭐⭐ (4.8/5)
+
+---
+
+### Tikka Pav (2 Pieces) 🍞
+
+Spicy tikka filling served inside soft pav buns.
+**Price:** ₹120
+**Rating:** ⭐⭐⭐⭐☆ (4.5/5)
+
+---
+
+### Surti Time Pass (2 Pieces) 🌶️
+
+Local street-style favorite with bold and chatpata flavors.
+**Price:** ₹150
+**Rating:** ⭐⭐⭐⭐⭐ (4.7/5)
+
+---
+
+for every order selection there is an option to add extra Add-ons (Available with every order, user have this option to add this in every menu item)
+
+* Cheese Slice — ₹20
+* Extra Masala — ₹10
+
+---
+
+
+
+a user can visit the website, it can feel the website, search the food items,  website having the menu where category vise there are so on food items with images, name, price, description and so on needed things, user can add the food item into cart, after cart there are three options - Pickup, Delivery and order on table,
+
+in pickup option if user select user have to fill the details - name, phone number, any description for the order , and in pickup option there is a button of google map - (https://maps.app.goo.gl/RsCQSCSKfNBXYht27)
+
+in delivery option - user have to add name, number, delivery address, any description for the order, and a note - Note Delivery charges depend on location. Please confirm before final payment.
+
+
+on order on table - if user select this, user have to add name, phone number, table number, and any description for the order, 
+
+
+in every order there is random food suggestion to add in the cart, user can ignore that or add that for the order
+
+after the proper selection, there is a confirmation, where user can see there food items, the price, total amount bill, user selection of that selected pickup, delivery or table, than button of order on the WhatsApp button where user click and that order will directly send to the +91 9023668571 on the WhatsApp with all proper information, 
+
+those all pages should be responsive and clean UI/UX
+
+the website structure is - 
+
+Website should have header with logo at left,  kitchen name at center, below kitchen name tagline of Quick Bites | Big Flavors and toggle theme switch at right, also a hamburger button with (menu, about, founder story, feedback, bulk order, footer ) in hamburger at bottom i need logo and name and tagline as well 
+
+
+note - Use logo image, food image that is given/ attached as a image.png as of now, i will change manually later on,
+	I need proper WhatsApp order system,
+	in the cart there is a random food suggestion to add, 
+	toggle button is for the theme switch, 
+	search bar is work as a Filter instantly while typing, 
+	for ordering system Add multiple quantities (+ / - buttons with number),
+	add random user feedback for feedback section also add google review button,
+	at about section add random information, 
+	in founder section need small square image with story of founder, 
+	at contact page add contacts { phone, gmail, google, insta, fb, twitter, Zomato button, feedback button, google map, fssai licnece, logo, tagline, design and devlope by, 	copyrights buttons }
+
+	
+
+

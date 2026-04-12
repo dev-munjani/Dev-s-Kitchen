@@ -1,0 +1,38 @@
+classic_maggi_1.jpg, classic_maggi_2.jpg, classic_maggi_3.jpg
+veggie_maggi_1.jpg, veggie_maggi_2.jpg, veggie_maggi_3.jpg
+schezwan_maggi_1.jpg, schezwan_maggi_2.jpg, schezwan_maggi_3.jpg
+double_cheese_maggi_1.jpg, double_cheese_maggi_2.jpg, double_cheese_maggi_3.jpg
+paneer_veg_maggi_1.jpg, paneer_veg_maggi_2.jpg, paneer_veg_maggi_3.jpg
+devs_special_maggi_1.jpg, devs_special_maggi_2.jpg, devs_special_maggi_3.jpg
+
+
+rosted_meggie_bhel_1.jpg
+
+
+viral_cheezy_cheez_1.jpg
+
+
+
+Pasta Corner:
+
+
+
+
+masala_penne_1.jpg, masala_penne_2.jpg, masala_penne_3.jpg
+white_sauce_penne_1.jpg, white_sauce_penne_2.jpg, white_sauce_penne_3.jpg
+red_sauce_penne_1.jpg, red_sauce_penne_2.jpg, red_sauce_penne_3.jpg
+pink_sauce_penne_1.jpg, pink_sauce_penne_2.jpg, pink_sauce_penne_3.jpg
+mom_style_pasta_1.jpg, mom_style_pasta_2.jpg, mom_style_pasta_3.jpg
+spaghetti_1.jpg, spaghetti_2.jpg, spaghetti_3.jpg
+Healthy Bowls:
+
+cucumber_salad_1.jpg, cucumber_salad_2.jpg, cucumber_salad_3.jpg
+sauteed_veg_1.jpg, sauteed_veg_2.jpg, sauteed_veg_3.jpg
+masala_paneer_1.jpg, masala_paneer_2.jpg, masala_paneer_3.jpg
+Dev's Kitchen Specials:
+
+cheese_pull_out_1.jpg, cheese_pull_out_2.jpg, cheese_pull_out_3.jpg
+tikka_pav_1.jpg, tikka_pav_2.jpg, tikka_pav_3.jpg
+surti_time_pass_1.jpg, surti_time_pass_2.jpg, surti_time_pass_3.jpg
+
+
