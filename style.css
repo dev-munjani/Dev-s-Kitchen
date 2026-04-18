@@ -3633,9 +3633,7 @@ footer {
     display: none
   }
 
-  .ic-lang {
-    display: none
-  }
+
 
   .hdr-logo {
     width: 36px;
@@ -4002,18 +4000,12 @@ footer {
 
   /* Header */
   .hdr {
-    padding: 0 10px;
-    height: 56px;
-    gap: 6px
+    padding: 0 12px;
+    height: 56px
   }
 
   .hdr-name {
     font-size: .9rem
-  }
-
-  .hdr-tag {
-    font-size: .44rem;
-    letter-spacing: 1.5px
   }
 
   .hdr-logo {
@@ -4021,20 +4013,9 @@ footer {
     height: 32px
   }
 
-  .hdr-right {
-    gap: 4px
-  }
-
   .ic {
     width: 32px;
     height: 32px
-  }
-
-  /* Translate button must stay auto-width to show text */
-  .ic-lang {
-    width: auto;
-    padding: 0 10px;
-    font-size: .62rem
   }
 
   /* Hero */
@@ -4342,27 +4323,11 @@ footer {
 /* ── SMALL MOBILE (≤380px) ── */
 @media (max-width: 380px) {
   .hdr {
-    padding: 0 8px;
-    gap: 4px
-  }
-
-  .hdr-right {
-    gap: 3px
+    padding: 0 10px
   }
 
   .hdr-name {
-    font-size: .78rem
-  }
-
-  .hdr-tag {
-    display: none
-  }
-
-  /* Keep translate button visible at very small sizes */
-  .ic-lang {
-    width: auto;
-    padding: 0 8px;
-    font-size: .6rem
+    font-size: .82rem
   }
 
   .hero-h1 {
