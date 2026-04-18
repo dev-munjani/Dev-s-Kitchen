@@ -4,29 +4,29 @@
 const MENU = [
   { id: 1, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Classic Maggi", nameGu: "ક્લાસિક મેગી", desc: "Plain or Masala — the nostalgic comfort bowl.", descGu: "પ્લેન અથવા મસાલા — ક્લાસિક સ્વાદ.", price: 60, rating: 4.2, badge: "", imgs: ["classic_maggi_1.jpg", "classic_maggi_2.jpg"] },
   { id: 2, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Veggie Maggi", nameGu: "વેજી મેગી", desc: "Fresh seasonal vegetables — Plain or Masala.", descGu: "તાજા શાકભાજી સાથે — પ્લેન કે મસાલા.", price: 80, rating: 4.4, badge: "", imgs: ["veggie_maggi_1.jpg", "veggie_maggi_2.jpg"] },
-  { id: 3, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Schezwan Maggi", nameGu: "Schezwan મેગી", desc: "Spicy Indo-Chinese twist with bold flavour.", descGu: "સ્પાઇસી ઇન્ડો ચાઇનીઝ સ્વાદ.", price: 80, rating: 4.6, badge: "Spicy", imgs: ["schezwan_maggi_1.jpg", "schezwan_maggi_2.jpg"] },
-  { id: 4, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Double Cheese Maggi", nameGu: "Double Cheese મેગી", desc: "Loaded with rich, melted, pull-out cheese.", descGu: "ભરપૂર મેલ્ટેડ ચીઝ સાથે.", price: 100, rating: 4.7, badge: "Popular", imgs: ["double_cheese_maggi_1.jpg", "double_cheese_maggi_2.jpg"] },
-  { id: 5, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Paneer Veg Maggi", nameGu: "Paneer Veg મેગી", desc: "Soft paneer with fresh vegetables.", descGu: "સોફ્ટ પનીર અને શાકભાજી.", price: 120, rating: 4.5, badge: "", imgs: ["paneer_veg_maggi_1.jpg", "paneer_veg_maggi_2.jpg"] },
-  { id: 6, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Dev's Special Maggi", nameGu: "Dev's Special મેગી", desc: "Signature house-style Maggi — a must try!", descGu: "અમારી સ્પેશિયલ મેગી — અચૂક ટેસ્ટ કરો!", price: 120, rating: 4.8, badge: "Signature", imgs: ["devs_special_maggi_1.jpg", "devs_special_maggi_2.jpg"] },
-  { id: 19, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Rosted Meggie Bhel", nameGu: "Rosted Meggie Bhel", desc: "Quich crunchy spicy rosted meggie bhel", descGu: "Quich crunchy spicy rosted meggie bhel", price: 80, rating: 4.3, badge: "", imgs: ["rosted_meggie_bhel_1.jpg", "rosted_meggie_bhel_2.jpg"] },
-  { id: 20, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Viral Cheezy Cheez Meggie", nameGu: "Viral Cheezy Cheez Meggie", desc: "Fully cheez loaded meggie", descGu: "Fully cheez loaded meggie", price: 140, rating: 4.8, badge: "Viral", imgs: ["viral_cheezy_cheez_1.jpg", "viral_cheezy_cheez_2.jpg"] },
-  { id: 7, cat: "Pasta Corner", catGu: "Pasta Corner", name: "Masala Penne Pasta", nameGu: "Masala Penne Pasta", desc: "Desi-style penne with bold Indian masala.", descGu: "દેશી સ્ટાઇલ મસાલા પેને પાસ્તા.", price: 70, rating: 4.3, badge: "", imgs: ["masala_penne_1.jpg", "masala_penne_2.jpg"] },
-  { id: 8, cat: "Pasta Corner", catGu: "Pasta Corner", name: "White Sauce Penne", nameGu: "White Sauce Penne", desc: "Creamy, smooth white sauce classic penne.", descGu: "ક્રીમી વ્હાઇટ સોસ પાસ્તા.", price: 120, rating: 4.6, badge: "", imgs: ["white_sauce_penne_1.jpg", "white_sauce_penne_2.jpg"] },
-  { id: 9, cat: "Pasta Corner", catGu: "Pasta Corner", name: "Red Sauce Penne", nameGu: "Red Sauce Penne", desc: "Tangy, rich tomato-based red sauce pasta.", descGu: "ચટપટા રેડ સોસ પાસ્તા.", price: 120, rating: 4.4, badge: "", imgs: ["red_sauce_penne_1.jpg", "red_sauce_penne_2.jpg"] },
-  { id: 10, cat: "Pasta Corner", catGu: "Pasta Corner", name: "Pink Sauce Penne", nameGu: "Pink Sauce Penne", desc: "White + red blended — the perfect balance.", descGu: "વ્હાઇટ અને રેડ સોસ મિક્સ.", price: 120, rating: 4.7, badge: "Bestseller", imgs: ["pink_sauce_penne_1.jpg", "pink_sauce_penne_2.jpg"] },
-  { id: 11, cat: "Pasta Corner", catGu: "Pasta Corner", name: "Indian Mom-Style Pasta", nameGu: "Mom-Style Pasta", desc: "Desi comfort pasta with a homestyle touch.", descGu: "ઘરજેવા દેશી પાસ્તા.", price: 100, rating: 4.5, badge: "", imgs: ["mom_style_pasta_1.jpg", "mom_style_pasta_2.jpg"] },
-  { id: 12, cat: "Pasta Corner", catGu: "Pasta Corner", name: "Spaghetti", nameGu: "Spaghetti", desc: "Aglio e Olio or Red Sauce — your choice.", descGu: "Agilo e Olio અથવા રેડ સોસ.", price: 180, rating: 4.6, badge: "", imgs: ["spaghetti_1.jpg", "spaghetti_2.jpg"] },
-  { id: 13, cat: "Healthy Bowls", catGu: "હેલ્ધી બાઉલ્સ", name: "Cucumber Salad Bowl", nameGu: "Cucumber Salad Bowl", desc: "Refreshing cucumber with light, fresh seasoning.", descGu: "હળવું ફ્રેશ કાકડી સલાડ.", price: 100, rating: 4.2, badge: "Light", imgs: ["cucumber_salad_1.jpg", "cucumber_salad_2.jpg"] },
-  { id: 14, cat: "Healthy Bowls", catGu: "હેલ્ધી બાઉલ્સ", name: "Sauteed Vegetable Bowl", nameGu: "Vegetable Bowl", desc: "Lightly sauteed mixed vegetable medley.", descGu: "સોતે કરેલ તાજા શાકભાજી મિક્સ.", price: 120, rating: 4.3, badge: "", imgs: ["sauteed_veg_1.jpg", "sauteed_veg_2.jpg"] },
-  { id: 15, cat: "Healthy Bowls", catGu: "હેલ્ધી બાઉલ્સ", name: "Masala Paneer Bowl", nameGu: "Paneer Bowl", desc: "Protein-rich spiced paneer in a hearty bowl.", descGu: "પ્રોટીનથી ભરપૂર મસાલા પનીર.", price: 150, rating: 4.6, badge: "High Protein", imgs: ["masala_paneer_1.jpg", "masala_paneer_2.jpg"] },
-  { id: 16, cat: "Dev's Kitchen Specials", catGu: "Dev's Specials", name: "Cheese Pull-Out Special", nameGu: "Cheese Pull-Out", desc: "Melty, stretchy cheese-loaded indulgence.", descGu: "ચીઝથી ભરપૂર સ્પેશિયલ.", price: 180, rating: 4.8, badge: "Must Try", imgs: ["cheese_pull_out_1.jpg", "cheese_pull_out_2.jpg"] },
-  { id: 17, cat: "Dev's Kitchen Specials", catGu: "Dev's Specials", name: "Tikka Pav (2 Pcs)", nameGu: "Tikka Pav (2 Pcs)", desc: "Spicy tikka filling inside soft, fluffy pav buns.", descGu: "સોફ્ટ પાવમાં સ્પાઇસી ટિક્કા.", price: 120, rating: 4.5, badge: "", imgs: ["tikka_pav_1.jpg", "tikka_pav_2.jpg"] },
-  { id: 18, cat: "Dev's Kitchen Specials", catGu: "Dev's Specials", name: "Surti Time Pass (2 Pcs)", nameGu: "Surti Time Pass", desc: "Local street-style chatpata snack favourite.", descGu: "સ્ટ્રીટ-સ્ટાઇલ ચટપટો સ્થાનિક નાસ્તો.", price: 150, rating: 4.7, badge: "Local Fav", imgs: ["surti_time_pass_1.jpg", "surti_time_pass_2.jpg"] }
+  { id: 3, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Schezwan Maggi", nameGu: "શેઝવાન મેગી", desc: "Spicy Indo-Chinese twist with bold flavour.", descGu: "તીખો ઇન્ડો-ચાઇનીઝ સ્વાદ.", price: 80, rating: 4.6, badge: "Spicy", imgs: ["schezwan_maggi_1.jpg", "schezwan_maggi_2.jpg"] },
+  { id: 4, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Double Cheese Maggi", nameGu: "ડબલ ચીઝ મેગી", desc: "Loaded with rich, melted, pull-out cheese.", descGu: "ભરપૂર મેલ્ટેડ ચીઝ સાથે.", price: 100, rating: 4.7, badge: "Popular", imgs: ["double_cheese_maggi_1.jpg", "double_cheese_maggi_2.jpg"] },
+  { id: 5, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Paneer Veg Maggi", nameGu: "પનીર વેજ મેગી", desc: "Soft paneer with fresh vegetables.", descGu: "સોફ્ટ પનીર અને તાજા શાકભાજી.", price: 120, rating: 4.5, badge: "", imgs: ["paneer_veg_maggi_1.jpg", "paneer_veg_maggi_2.jpg"] },
+  { id: 6, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Dev's Special Maggi", nameGu: "Dev's સ્પેશિયલ મેગી", desc: "Signature house-style Maggi — a must try!", descGu: "અમારી સ્પેશિયલ મેગી — અચૂક ટેસ્ટ કરો!", price: 120, rating: 4.8, badge: "Signature", imgs: ["devs_special_maggi_1.jpg", "devs_special_maggi_2.jpg"] },
+  { id: 19, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Rosted Meggie Bhel", nameGu: "રોસ્ટેડ મેગી ભેળ", desc: "Quick, crunchy & spicy roasted Maggi bhel.", descGu: "ઝડપી, ક્રન્ચી અને ચટપટી રોસ્ટેડ મેગી ભેળ.", price: 80, rating: 4.3, badge: "", imgs: ["rosted_meggie_bhel_1.jpg", "rosted_meggie_bhel_2.jpg"] },
+  { id: 20, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Viral Cheezy Cheez Meggie", nameGu: "વાઇરલ ચીઝી ચીઝ મેગી", desc: "Fully cheese-loaded Maggi — going viral!", descGu: "ભરપૂર ચીઝ ભરેલી મેગી — સૌથી વાઇરલ!", price: 140, rating: 4.8, badge: "Viral", imgs: ["viral_cheezy_cheez_1.jpg", "viral_cheezy_cheez_2.jpg"] },
+  { id: 7, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Masala Penne Pasta", nameGu: "મસાલા પેને પાસ્તા", desc: "Desi-style penne with bold Indian masala.", descGu: "દેશી સ્ટાઇલ મસાલા પેને પાસ્તા.", price: 70, rating: 4.3, badge: "", imgs: ["masala_penne_1.jpg", "masala_penne_2.jpg"] },
+  { id: 8, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "White Sauce Penne", nameGu: "વ્હાઇટ સોસ પેને", desc: "Creamy, smooth white sauce classic penne.", descGu: "ક્રીમી અને સ્મૂધ વ્હાઇટ સોસ પાસ્તા.", price: 120, rating: 4.6, badge: "", imgs: ["white_sauce_penne_1.jpg", "white_sauce_penne_2.jpg"] },
+  { id: 9, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Red Sauce Penne", nameGu: "રેડ સોસ પેને", desc: "Tangy, rich tomato-based red sauce pasta.", descGu: "ચટપટો ટોમેટો બેઝ્ડ રેડ સોસ પાસ્તા.", price: 120, rating: 4.4, badge: "", imgs: ["red_sauce_penne_1.jpg", "red_sauce_penne_2.jpg"] },
+  { id: 10, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Pink Sauce Penne", nameGu: "પિન્ક સોસ પેને", desc: "White + red blended — the perfect balance.", descGu: "વ્હાઇટ અને રેડ સોસ — પરફેક્ટ સ્વાદ.", price: 120, rating: 4.7, badge: "Bestseller", imgs: ["pink_sauce_penne_1.jpg", "pink_sauce_penne_2.jpg"] },
+  { id: 11, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Indian Mom-Style Pasta", nameGu: "ઘરજેવો પાસ્તા", desc: "Desi comfort pasta with a homestyle touch.", descGu: "ઘર જેવો દેશી સ્ટાઇલ પાસ્તા.", price: 100, rating: 4.5, badge: "", imgs: ["mom_style_pasta_1.jpg", "mom_style_pasta_2.jpg"] },
+  { id: 12, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Spaghetti", nameGu: "સ્પાઘેટ્ટી", desc: "Aglio e Olio or Red Sauce — your choice.", descGu: "Aglio e Olio અથવા રેડ સોસ — તમારી પસંદ.", price: 180, rating: 4.6, badge: "", imgs: ["spaghetti_1.jpg", "spaghetti_2.jpg"] },
+  { id: 13, cat: "Healthy Bowls", catGu: "હેલ્ધી બાઉલ્સ", name: "Cucumber Salad Bowl", nameGu: "કાકડી સલાડ બાઉલ", desc: "Refreshing cucumber with light, fresh seasoning.", descGu: "તાજા અને હળવા મસાલા સાથે ફ્રેશ કાકડી સલાડ.", price: 100, rating: 4.2, badge: "Light", imgs: ["cucumber_salad_1.jpg", "cucumber_salad_2.jpg"] },
+  { id: 14, cat: "Healthy Bowls", catGu: "હેલ્ધી બાઉલ્સ", name: "Sauteed Vegetable Bowl", nameGu: "સોતે શાકભાજી બાઉલ", desc: "Lightly sauteed mixed vegetable medley.", descGu: "હળવા સોતે કરેલ તાજા મિક્સ શાકભાજી.", price: 120, rating: 4.3, badge: "", imgs: ["sauteed_veg_1.jpg", "sauteed_veg_2.jpg"] },
+  { id: 15, cat: "Healthy Bowls", catGu: "હેલ્ધી બાઉલ્સ", name: "Masala Paneer Bowl", nameGu: "મસાલા પનીર બાઉલ", desc: "Protein-rich spiced paneer in a hearty bowl.", descGu: "પ્રોટીનથી ભરપૂર મસાલા પનીર બાઉલ.", price: 150, rating: 4.6, badge: "High Protein", imgs: ["masala_paneer_1.jpg", "masala_paneer_2.jpg"] },
+  { id: 16, cat: "Dev's Kitchen Specials", catGu: "Dev's સ્પેશિયલ્સ", name: "Cheese Pull-Out Special", nameGu: "ચીઝ પુલ-આઉટ સ્પેશિયલ", desc: "Melty, stretchy cheese-loaded indulgence.", descGu: "ખેંચાય એવા ચીઝ સાથે ભરપૂર ઇન્ડલ્જન્સ.", price: 180, rating: 4.8, badge: "Must Try", imgs: ["cheese_pull_out_1.jpg", "cheese_pull_out_2.jpg"] },
+  { id: 17, cat: "Dev's Kitchen Specials", catGu: "Dev's સ્પેશિયલ્સ", name: "Tikka Pav (2 Pcs)", nameGu: "ટિક્કા પાવ (૨ નંગ)", desc: "Spicy tikka filling inside soft, fluffy pav buns.", descGu: "સોફ્ટ પાવમાં ભરેલ સ્પાઇસી ટિક્કા.", price: 120, rating: 4.5, badge: "", imgs: ["tikka_pav_1.jpg", "tikka_pav_2.jpg"] },
+  { id: 18, cat: "Dev's Kitchen Specials", catGu: "Dev's સ્પેશિયલ્સ", name: "Surti Time Pass (2 Pcs)", nameGu: "સુરતી ટાઇમ પાસ (૨ નંગ)", desc: "Local street-style chatpata snack favourite.", descGu: "સ્ટ્રીટ-સ્ટાઇલ ચટપટો સ્થાનિક પ્રિય નાસ્તો.", price: 150, rating: 4.7, badge: "Local Fav", imgs: ["surti_time_pass_1.jpg", "surti_time_pass_2.jpg"] }
 ];
 
 const ADDONS = [
-  { name: "Cheese Slice", nameGu: "Cheese Slice", price: 20 },
-  { name: "Extra Masala", nameGu: "Extra Masala", price: 10 }
+  { name: "Cheese Slice", nameGu: "ચીઝ સ્લાઇસ", price: 20 },
+  { name: "Extra Masala", nameGu: "વધારે મસાલો", price: 10 }
 ];
 
 const CATS = [...new Set(MENU.map(i => i.cat))];
@@ -36,6 +36,13 @@ const CATINFO = {
   "Pasta Corner": "Rich, creamy & flavourful",
   "Healthy Bowls": "Fresh, light & nutritious",
   "Dev's Kitchen Specials": "Unique street-style bites"
+};
+
+const CATINFO_GU = {
+  "Maggi Specials": "ક્લાસિક, તીખી અને કસ્ટમાઇઝ",
+  "Pasta Corner": "રિચ, ક્રીમી અને સ્વાદિષ્ટ",
+  "Healthy Bowls": "તાજા, હળવા અને પૌષ્ટિક",
+  "Dev's Kitchen Specials": "અનોખો સ્ટ્રીટ-સ્ટાઇલ નાસ્તો"
 };
 
 const FEEDBACKS = [
@@ -179,7 +186,7 @@ function renderMenu(q = "") {
   let h = "";
   for (let cat in grp) {
     const fi = grp[cat][0];
-    h += `<div class="cat-hd rv"><h2>${isGu() ? fi.catGu : cat}</h2><p>${CATINFO[cat] || ""}</p></div><div class="cat-hd-line rv"></div><div class="m-grid">`;
+    h += `<div class="cat-hd rv"><h2>${isGu() ? fi.catGu : cat}</h2><p>${isGu() ? (CATINFO_GU[cat] || "") : (CATINFO[cat] || "")}</p></div><div class="cat-hd-line rv"></div><div class="m-grid">`;
     grp[cat].forEach((item, idx) => {
       // ── Single source of truth: read qty & addons from cart ──
       const cartEntry = cart.find(c => c.id === item.id);
