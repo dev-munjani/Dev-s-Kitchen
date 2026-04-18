@@ -626,9 +626,23 @@ setInterval(() => {
 }, 10000);
 
 // ============================================================
-// INIT & LOADER (Removed for instant loading)
+// INIT & LOADER
 // ============================================================
-// (function initLoader() { ... })();
+(function initLoader() {
+  const minTime = 2200;
+  const startTime = Date.now();
+  window.addEventListener('load', () => {
+    const elapsed = Date.now() - startTime;
+    const remaining = Math.max(0, minTime - elapsed);
+    setTimeout(() => {
+      const loader = document.getElementById('loader');
+      if (loader) {
+        loader.classList.add('fade-out');
+        setTimeout(() => loader.remove(), 700);
+      }
+    }, remaining);
+  });
+})();
 
 buildMarquee();
 renderCats();
