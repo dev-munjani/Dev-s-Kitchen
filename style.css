@@ -4466,4 +4466,69 @@ footer {
     width: 18px;
     height: 18px;
   }
+  }
+}
+
+/* ===== PWA POPUP ===== */
+.pwa-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(150%);
+  width: 90%;
+  max-width: 360px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-xl);
+  border-radius: var(--r-md);
+  padding: 16px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.5s ease;
+}
+.pwa-popup.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+.pwa-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.pwa-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.pwa-text h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+.pwa-text p {
+  font-size: 0.85rem;
+  color: var(--text3);
+}
+.pwa-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.pwa-btn {
+  padding: 8px 16px;
+  border-radius: var(--r-full);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.pwa-cancel {
+  color: var(--text2);
+  background: var(--bg2);
+}
+.pwa-install {
+  color: var(--accent-text);
+  background: var(--accent);
 }
