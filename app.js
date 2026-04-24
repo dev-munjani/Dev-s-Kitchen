@@ -162,7 +162,7 @@ function renderCats() {
   let h = `<button class="cat ${aCat === "All" ? "on" : ""}" onclick="fCat('All')">${allT}</button>`;
   CATS.forEach(c => {
     const item = MENU.find(m => m.cat === c);
-    h += `<button class="cat ${aCat === c ? "on" : ""}" onclick="fCat('${c}')">${isGu() ? item.catGu : c}</button>`;
+    h += `<button class="cat ${aCat === c ? "on" : ""}" onclick="fCat(\`${c}\`)">${isGu() ? item.catGu : c}</button>`;
   });
   $("catsEl").innerHTML = h;
 }
@@ -417,7 +417,7 @@ function updateCart() {
     const adT = c.ad.length ? c.ad.join(", ") : "";
     const m = MENU.find(x => x.id === c.id);
     h += `<div class="cart-item" style="animation-delay:${idx * .05}s">
-      <img src="${m ? m.imgs[0] : 'image.png'}" alt="${c.name}" onclick="openProd(${c.id})">
+      <img src="${m ? m.imgs[0] : 'image_opt.jpg'}" alt="${c.name}" onclick="openProd(${c.id})">
       <div class="ci"><h4>${isGu() ? c.nameGu : c.name}</h4>${adT ? `<div class="ci-add">+ ${adT}</div>` : ""}<div class="ci-p">₹${it}</div><button class="ci-rm" onclick="rmCart(${idx})">${isGu() ? "કાઢી નાખો" : "Remove"}</button></div>
       <div class="c-qty"><button class="c-qty-btn" onclick="cQty(${idx},-1)">−</button><span class="c-qty-n">${c.qty}</span><button class="c-qty-btn" onclick="cQty(${idx},1)">+</button></div>
     </div>`;
