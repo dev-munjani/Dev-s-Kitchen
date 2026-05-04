@@ -2,25 +2,31 @@
 // DATA
 // ============================================================
 const MENU = [
-  { id: 1, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Classic Maggi", nameGu: "ક્લાસિક મેગી", desc: "Plain or Masala — the nostalgic comfort bowl.", descGu: "પ્લેન અથવા મસાલા — ક્લાસિક સ્વાદ.", price: 60, rating: 4.2, badge: "", imgs: ["classic_maggi_1.jpg", "classic_maggi_2.jpg"] },
-  { id: 2, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Veggie Maggi", nameGu: "વેજી મેગી", desc: "Fresh seasonal vegetables — Plain or Masala.", descGu: "તાજા શાકભાજી સાથે — પ્લેન કે મસાલા.", price: 80, rating: 4.4, badge: "", imgs: ["veggie_maggi_1.jpg", "veggie_maggi_2.jpg"] },
-  { id: 3, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Schezwan Maggi", nameGu: "શેઝવાન મેગી", desc: "Spicy Indo-Chinese twist with bold flavour.", descGu: "તીખો ઇન્ડો-ચાઇનીઝ સ્વાદ.", price: 80, rating: 4.6, badge: "Spicy", imgs: ["schezwan_maggi_1.jpg", "schezwan_maggi_2.jpg"] },
-  { id: 4, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Double Cheese Maggi", nameGu: "ડબલ ચીઝ મેગી", desc: "Loaded with rich, melted, pull-out cheese.", descGu: "ભરપૂર મેલ્ટેડ ચીઝ સાથે.", price: 100, rating: 4.7, badge: "Popular", imgs: ["double_cheese_maggi_1.jpg", "double_cheese_maggi_2.jpg"] },
-  { id: 5, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Paneer Veg Maggi", nameGu: "પનીર વેજ મેગી", desc: "Soft paneer with fresh vegetables.", descGu: "સોફ્ટ પનીર અને તાજા શાકભાજી.", price: 120, rating: 4.5, badge: "", imgs: ["paneer_veg_maggi_1.jpg", "paneer_veg_maggi_2.jpg"] },
-  { id: 6, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Dev's Special Maggi", nameGu: "Dev's સ્પેશિયલ મેગી", desc: "Signature house-style Maggi — a must try!", descGu: "અમારી સ્પેશિયલ મેગી — અચૂક ટેસ્ટ કરો!", price: 120, rating: 4.8, badge: "Signature", imgs: ["devs_special_maggi_1.jpg", "devs_special_maggi_2.jpg"] },
+  { id: 1, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Classic Maggi", nameGu: "ક્લાસિક મેગી", desc: "Plain or Masala — the nostalgic comfort bowl.", descGu: "પ્લેન અથવા મસાલા — ક્લાસિક સ્વાદ.", price: 80, rating: 4.2, badge: "", imgs: ["classic_maggi_1.jpg", "classic_maggi_2.jpg"] },
+  { id: 2, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Veggie Maggi", nameGu: "વેજી મેગી", desc: "Fresh seasonal vegetables — Plain or Masala.", descGu: "તાજા શાકભાજી સાથે — પ્લેન કે મસાલા.", price: 110, rating: 4.4, badge: "", imgs: ["veggie_maggi_1.jpg", "veggie_maggi_2.jpg"] },
+  { id: 3, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Schezwan Maggi", nameGu: "શેઝવાન મેગી", desc: "Spicy Indo-Chinese twist with bold flavour.", descGu: "તીખો ઇન્ડો-ચાઇનીઝ સ્વાદ.", price: 110, rating: 4.6, badge: "Spicy", imgs: ["schezwan_maggi_1.jpg", "schezwan_maggi_2.jpg"] },
+  { id: 4, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Double Cheese Maggi", nameGu: "ડબલ ચીઝ મેગી", desc: "Loaded with rich, melted, pull-out cheese.", descGu: "ભરપૂર મેલ્ટેડ ચીઝ સાથે.", price: 130, rating: 4.7, badge: "Popular", imgs: ["double_cheese_maggi_1.jpg", "double_cheese_maggi_2.jpg"] },
+  { id: 5, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Paneer Veg Maggi", nameGu: "પનીર વેજ મેગી", desc: "Soft paneer with fresh vegetables.", descGu: "સોફ્ટ પનીર અને તાજા શાકભાજી.", price: 140, rating: 4.5, badge: "", imgs: ["paneer_veg_maggi_1.jpg", "paneer_veg_maggi_2.jpg"] },
+  { id: 6, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Dev's Special Maggi", nameGu: "Dev's સ્પેશિયલ મેગી", desc: "Signature house-style Maggi — a must try!", descGu: "અમારી સ્પેશિયલ મેગી — અચૂક ટેસ્ટ કરો!", price: 170, rating: 4.8, badge: "Signature", imgs: ["devs_special_maggi_1.jpg", "devs_special_maggi_2.jpg"] },
   { id: 19, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Rosted Meggie Bhel", nameGu: "રોસ્ટેડ મેગી ભેળ", desc: "Quick, crunchy & spicy roasted Maggi bhel.", descGu: "ઝડપી, ક્રન્ચી અને ચટપટી રોસ્ટેડ મેગી ભેળ.", price: 80, rating: 4.3, badge: "", imgs: ["rosted_meggie_bhel_1.jpg", "rosted_meggie_bhel_2.jpg"] },
   { id: 20, cat: "Maggi Specials", catGu: "મેગી સ્પેશિયલ", name: "Viral Cheezy Cheez Meggie", nameGu: "વાઇરલ ચીઝી ચીઝ મેગી", desc: "Fully cheese-loaded Maggi — going viral!", descGu: "ભરપૂર ચીઝ ભરેલી મેગી — સૌથી વાઇરલ!", price: 140, rating: 4.8, badge: "Viral", imgs: ["viral_cheezy_cheez_1.jpg", "viral_cheezy_cheez_2.jpg"] },
-  { id: 7, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Masala Penne Pasta", nameGu: "મસાલા પેને પાસ્તા", desc: "Desi-style penne with bold Indian masala.", descGu: "દેશી સ્ટાઇલ મસાલા પેને પાસ્તા.", price: 70, rating: 4.3, badge: "", imgs: ["masala_penne_1.jpg", "masala_penne_2.jpg"] },
-  { id: 8, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "White Sauce Penne", nameGu: "વ્હાઇટ સોસ પેને", desc: "Creamy, smooth white sauce classic penne.", descGu: "ક્રીમી અને સ્મૂધ વ્હાઇટ સોસ પાસ્તા.", price: 120, rating: 4.6, badge: "", imgs: ["white_sauce_penne_1.jpg", "white_sauce_penne_2.jpg"] },
-  { id: 9, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Red Sauce Penne", nameGu: "રેડ સોસ પેને", desc: "Tangy, rich tomato-based red sauce pasta.", descGu: "ચટપટો ટોમેટો બેઝ્ડ રેડ સોસ પાસ્તા.", price: 120, rating: 4.4, badge: "", imgs: ["red_sauce_penne_1.jpg", "red_sauce_penne_2.jpg"] },
-  { id: 10, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Pink Sauce Penne", nameGu: "પિન્ક સોસ પેને", desc: "White + red blended — the perfect balance.", descGu: "વ્હાઇટ અને રેડ સોસ — પરફેક્ટ સ્વાદ.", price: 120, rating: 4.7, badge: "Bestseller", imgs: ["pink_sauce_penne_1.jpg", "pink_sauce_penne_2.jpg"] },
+  { id: 7, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Masala Paneer Pasta", nameGu: "મસાલા પનીર પાસ્તા", desc: "Desi-style pasta with bold Indian masala and soft paneer.", descGu: "દેશી સ્ટાઇલ મસાલા પાસ્તા અને સોફ્ટ પનીર.", price: 100, rating: 4.3, badge: "", imgs: ["masala_penne_1.jpg", "masala_penne_2.jpg"] },
+  { id: 8, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "White Sauce Paneer Pasta", nameGu: "વ્હાઇટ સોસ પનીર પાસ્તા", desc: "Creamy white sauce pasta loaded with paneer.", descGu: "ક્રીમી વ્હાઇટ સોસ પાસ્તા અને પનીર.", price: 150, rating: 4.6, badge: "", imgs: ["white_sauce_penne_1.jpg", "white_sauce_penne_2.jpg"] },
+  { id: 9, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Red Sauce Paneer Pasta", nameGu: "રેડ સોસ પનીર પાસ્તા", desc: "Tangy tomato-based pasta with paneer cubes.", descGu: "ચટપટો ટોમેટો બેઝ્ડ પાસ્તા અને પનીર.", price: 150, rating: 4.4, badge: "", imgs: ["red_sauce_penne_1.jpg", "red_sauce_penne_2.jpg"] },
+  { id: 10, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Pink Sauce Pasta", nameGu: "પિન્ક સોસ પાસ્તા", desc: "White + red blended — the perfect balance.", descGu: "વ્હાઇટ અને રેડ સોસ — પરફેક્ટ સ્વાદ.", price: 180, rating: 4.7, badge: "Bestseller", imgs: ["pink_sauce_penne_1.jpg", "pink_sauce_penne_2.jpg"] },
   { id: 11, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Indian Mom-Style Pasta", nameGu: "ઘરજેવો પાસ્તા", desc: "Desi comfort pasta with a homestyle touch.", descGu: "ઘર જેવો દેશી સ્ટાઇલ પાસ્તા.", price: 100, rating: 4.5, badge: "", imgs: ["mom_style_pasta_1.jpg", "mom_style_pasta_2.jpg"] },
-  { id: 12, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Spaghetti", nameGu: "સ્પાઘેટ્ટી", desc: "Aglio e Olio or Red Sauce — your choice.", descGu: "Aglio e Olio અથવા રેડ સોસ — તમારી પસંદ.", price: 180, rating: 4.6, badge: "", imgs: ["spaghetti_1.jpg", "spaghetti_2.jpg"] },
+  { id: 12, cat: "Pasta Corner", catGu: "પાસ્તા કોર્નર", name: "Spaghetti", nameGu: "સ્પાઘેટ્ટી", desc: "Classic spaghetti with rich flavours.", descGu: "ક્લાસિક સ્પાઘેટ્ટી અને રિચ સ્વાદ.", price: 200, rating: 4.6, badge: "", imgs: ["spaghetti_1.jpg", "spaghetti_2.jpg"] },
   { id: 13, cat: "Healthy Bowls", catGu: "હેલ્ધી બાઉલ્સ", name: "Cucumber Salad Bowl", nameGu: "કાકડી સલાડ બાઉલ", desc: "Refreshing cucumber with light, fresh seasoning.", descGu: "તાજા અને હળવા મસાલા સાથે ફ્રેશ કાકડી સલાડ.", price: 100, rating: 4.2, badge: "Light", imgs: ["cucumber_salad_1.jpg", "cucumber_salad_2.jpg"] },
   { id: 14, cat: "Healthy Bowls", catGu: "હેલ્ધી બાઉલ્સ", name: "Sauteed Vegetable Bowl", nameGu: "સોતે શાકભાજી બાઉલ", desc: "Lightly sauteed mixed vegetable medley.", descGu: "હળવા સોતે કરેલ તાજા મિક્સ શાકભાજી.", price: 120, rating: 4.3, badge: "", imgs: ["sauteed_veg_1.jpg", "sauteed_veg_2.jpg"] },
   { id: 15, cat: "Healthy Bowls", catGu: "હેલ્ધી બાઉલ્સ", name: "Masala Paneer Bowl", nameGu: "મસાલા પનીર બાઉલ", desc: "Protein-rich spiced paneer in a hearty bowl.", descGu: "પ્રોટીનથી ભરપૂર મસાલા પનીર બાઉલ.", price: 150, rating: 4.6, badge: "High Protein", imgs: ["masala_paneer_1.jpg", "masala_paneer_2.jpg"] },
-  { id: 16, cat: "Dev's Kitchen Specials", catGu: "Dev's સ્પેશિયલ્સ", name: "Cheese Pull-Out Special", nameGu: "ચીઝ પુલ-આઉટ સ્પેશિયલ", desc: "Melty, stretchy cheese-loaded indulgence.", descGu: "ખેંચાય એવા ચીઝ સાથે ભરપૂર ઇન્ડલ્જન્સ.", price: 180, rating: 4.8, badge: "Must Try", imgs: ["cheese_pull_out_1.jpg", "cheese_pull_out_2.jpg"] },
-  { id: 17, cat: "Dev's Kitchen Specials", catGu: "Dev's સ્પેશિયલ્સ", name: "Tikka Pav (2 Pcs)", nameGu: "ટિક્કા પાવ (૨ નંગ)", desc: "Spicy tikka filling inside soft, fluffy pav buns.", descGu: "સોફ્ટ પાવમાં ભરેલ સ્પાઇસી ટિક્કા.", price: 120, rating: 4.5, badge: "", imgs: ["tikka_pav_1.jpg", "tikka_pav_2.jpg"] },
+  { id: 16, cat: "Pull-Outs", catGu: "પુલ-આઉટ્સ", name: "Cheese Pull-Out", nameGu: "ચીઝ પુલ-આઉટ", desc: "Melty, stretchy cheese-loaded indulgence.", descGu: "ખેંચાય એવા ચીઝ સાથે ભરપૂર ઇન્ડલ્જન્સ.", price: 200, rating: 4.8, badge: "Must Try", imgs: ["cheese_pull_out_1.jpg", "cheese_pull_out_2.jpg"] },
+  { id: 25, cat: "Pull-Outs", catGu: "પુલ-આઉટ્સ", name: "Cheese Corn Pull-Out", nameGu: "ચીઝ કોર્ન પુલ-આઉટ", desc: "Classic cheese pull-out with sweet corn.", descGu: "સ્વીટ કોર્ન અને ચીઝ પુલ-આઉટ.", price: 220, rating: 4.6, badge: "", imgs: ["cheese_corn_pull_out_1.png", "cheese_pull_out_2.jpg"] },
+  { id: 26, cat: "Pull-Outs", catGu: "પુલ-આઉટ્સ", name: "Mexican Pull-Out", nameGu: "મેક્સિકન પુલ-આઉટ", desc: "Spicy Mexican flavours with loaded cheese.", descGu: "મેક્સિકન સ્વાદ અને ભરપૂર ચીઝ.", price: 220, rating: 4.7, badge: "", imgs: ["mexican_pull_out_1.png", "cheese_pull_out_2.jpg"] },
+  { id: 27, cat: "Pull-Outs", catGu: "પુલ-આઉટ્સ", name: "Peri Peri Paneer Pull-Out", nameGu: "પેરી પેરી પનીર પુલ-આઉટ", desc: "Spicy peri peri paneer with melty cheese.", descGu: "પેરી પેરી પનીર અને મેલ્ટેડ ચીઝ.", price: 230, rating: 4.8, badge: "New", imgs: ["peri_peri_paneer_pull_out_1.png", "cheese_pull_out_2.jpg"] },
+  { id: 21, cat: "Tikka Pav", catGu: "ટિક્કા પાવ", name: "Veggie Delight Tikka Pav", nameGu: "વેજી ડેલાઈટ ટિક્કા પાવ", desc: "Fresh veggie filling in soft pav buns.", descGu: "તાજા વેજી ટેસ્ટી ટિક્કા પાવ.", price: 120, rating: 4.4, badge: "", imgs: ["tikka_pav_1.jpg", "tikka_pav_2.jpg"] },
+  { id: 22, cat: "Tikka Pav", catGu: "ટિક્કા પાવ", name: "Schezwan Tikka Pav", nameGu: "શેઝવાન ટિક્કા પાવ", desc: "Spicy schezwan twist to your favourite tikka pav.", descGu: "શેઝવાન ટિક્કા પાવ — તીખો સ્વાદ.", price: 120, rating: 4.5, badge: "Spicy", imgs: ["tikka_pav_1.jpg", "tikka_pav_2.jpg"] },
+  { id: 23, cat: "Tikka Pav", catGu: "ટિક્કા પાવ", name: "Tandoori Paneer Tikka Pav", nameGu: "તંદૂરી પનીર ટિક્કા પાવ", desc: "Smoky tandoori paneer in soft pav.", descGu: "તંદૂરી પનીર ટિક્કા પાવ — સ્મોકી સ્વાદ.", price: 140, rating: 4.7, badge: "Bestseller", imgs: ["tandoori_paneer_tikka_pav_1.png", "tikka_pav_2.jpg"] },
+  { id: 24, cat: "Tikka Pav", catGu: "ટિક્કા પાવ", name: "Peri Peri Paneer Tikka Pav", nameGu: "પેરી પેરી પનીર ટિક્કા પાવ", desc: "Zesty peri peri paneer filling.", descGu: "પેરી પેરી પનીર ટિક્કા પાવ — ચટપટો સ્વાદ.", price: 140, rating: 4.6, badge: "", imgs: ["peri_peri_paneer_tikka_pav_1.png", "tikka_pav_2.jpg"] },
   { id: 18, cat: "Dev's Kitchen Specials", catGu: "Dev's સ્પેશિયલ્સ", name: "Surti Time Pass (2 Pcs)", nameGu: "સુરતી ટાઇમ પાસ (૨ નંગ)", desc: "Local street-style chatpata snack favourite.", descGu: "સ્ટ્રીટ-સ્ટાઇલ ચટપટો સ્થાનિક પ્રિય નાસ્તો.", price: 150, rating: 4.7, badge: "Local Fav", imgs: ["surti_time_pass_1.jpg", "surti_time_pass_2.jpg"] }
 ];
 
@@ -35,6 +41,8 @@ const CATINFO = {
   "Maggi Specials": "Classic, spicy & customizable",
   "Pasta Corner": "Rich, creamy & flavourful",
   "Healthy Bowls": "Fresh, light & nutritious",
+  "Tikka Pav": "Spicy & soft street sliders",
+  "Pull-Outs": "Melty, stretchy cheese indulgence",
   "Dev's Kitchen Specials": "Unique street-style bites"
 };
 
@@ -42,19 +50,21 @@ const CATINFO_GU = {
   "Maggi Specials": "ક્લાસિક, તીખી અને કસ્ટમાઇઝ",
   "Pasta Corner": "રિચ, ક્રીમી અને સ્વાદિષ્ટ",
   "Healthy Bowls": "તાજા, હળવા અને પૌષ્ટિક",
+  "Tikka Pav": "સ્પાઇસી અને સોફ્ટ સ્ટ્રીટ સ્લાઇડર્સ",
+  "Pull-Outs": "મેલ્ટેડ ચીઝ પુલ-આઉટ્સ",
   "Dev's Kitchen Specials": "અનોખો સ્ટ્રીટ-સ્ટાઇલ નાસ્તો"
 };
 
 const FEEDBACKS = [
   { n: "Rahul S.", s: 5, t: "Dev's Special Maggi is genuinely the best I've had in my life. Period. I drive across town just for it.", tg: "Dev's Special Maggi — એકદમ બેસ્ટ. દૂરથી ખાસ ખાવા આવું છું." },
   { n: "Priya M.", s: 5, t: "The Pink Sauce Pasta is addictive. I order it 3 times a week. The creaminess is absolutely unmatched!", tg: "પિન્ક સોસ પાસ્તા — મસ્ત ક્રીમી. અઠવાડિયામાં 3 વાર મંગાવું છું!" },
-  { n: "Amit K.", s: 4, t: "Great food, great price. The Cheese Pull-Out Special is pure theatre — worth every rupee.", tg: "ચીઝ પુલ-આઉટ સ્પેશિયલ તો જોરદાર છે — પૂરા પૈસા વસૂલ." },
+  { n: "Amit K.", s: 4, t: "Great food, great price. The Cheese Pull-Out is pure theatre — worth every rupee.", tg: "ચીઝ પુલ-આઉટ તો જોરદાર છે — પૂરા પૈસા વસૂલ." },
   { n: "Sneha R.", s: 5, t: "Finally a street cart that does healthy bowls right. Fresh, tasty, and actually filling!", tg: "હેલ્ધી બાઉલ્સ — એકદમ તાજા અને સ્વાદિષ્ટ." },
   { n: "Vikram P.", s: 4, t: "Surti Time Pass hits different every time. That chatpata punch is genuine street food nostalgia.", tg: "સુરતી ટાઇમ પાસ — એકદમ ચટપટો સ્થાનિક સ્વાદ." },
   { n: "Ananya D.", s: 5, t: "Ordered bulk for our office party — flawless execution. Everyone was asking where it came from!", tg: "બલ્ક ઓર્ડરમાં પરફેક્ટ સર્વિસ! બધાને સ્વાદ ખૂબ ગમ્યો." }
 ];
 
-const MQ_ITEMS = ["Classic Maggi", "Veggie Maggi", "Schezwan Maggi", "Double Cheese Maggi", "Dev's Special Maggi", "Masala Penne", "White Sauce Pasta", "Red Sauce Pasta", "Pink Sauce Pasta", "Spaghetti", "Cucumber Bowl", "Masala Paneer Bowl", "Cheese Pull-Out", "Tikka Pav", "Surti Time Pass"];
+const MQ_ITEMS = ["Classic Maggi", "Veggie Maggi", "Schezwan Maggi", "Double Cheese Maggi", "Dev's Special Maggi", "Masala Paneer Pasta", "White Sauce Paneer", "Red Sauce Paneer", "Pink Sauce Pasta", "Spaghetti", "Cheese Pull-Out", "Veggie Delight Tikka Pav", "Tandoori Paneer Tikka Pav", "Surti Time Pass"];
 
 // ============================================================
 // STATE
